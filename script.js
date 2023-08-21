@@ -71,6 +71,39 @@ const reveal=()=>
   }
   
 }
+let nextBtn = document.getElementById("nextBtn");
+let hiddenBox1= document.getElementsByClassName("hiddenBox1");
+let hiddenBox2= document.getElementsByClassName("hiddenBox2");
+var hide=0;
+const hideshow=()=>
+{
+  
+  if(hide==0)
+  {
+    for (var i = 0; i < hiddenBox1.length; i++) {
+      hiddenBox1[i].style.display="none";
+      hiddenBox2[i].style.display="flex";
+  
+    }
+    hide=1;
+  }
+  else
+  {
+    for (var i = 0; i < hiddenBox2.length; i++) {
+      hiddenBox1[i].style.display="flex";
+      hiddenBox2[i].style.display="none";
+  
+    }
+    hide=0;
+  }
+}
+nextBtn.onclick = ()=> {
+
+  nextBtn.classList.toggle("rotated");
+
+
+}
 console.log("Thank you for visiting my website!!! ><");
 musicButton.addEventListener('click',playMusic);
 window.addEventListener('scroll', reveal);
+nextBtn.addEventListener('click', hideshow);
