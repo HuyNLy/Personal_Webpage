@@ -297,7 +297,7 @@ html {
   position: absolute;
   inset: 4px;
   border-radius: 15px 50px 30px 5px;
-  background-image: linear-gradient(#7752ad,#c13e80);;
+  background-image: linear-gradient(#ec82d5,#ea3b4d);;
   z-index:-10;
 }
 .link{
@@ -324,7 +324,7 @@ html {
 }
 .box:nth-child(2)
 {
-  background-image: linear-gradient(skyblue,#CC5ABD);
+  background-image: linear-gradient(#88e986, skyblue);
 }
 
 .box:nth-child(3)
