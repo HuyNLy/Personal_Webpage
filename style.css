@@ -51,7 +51,6 @@ html {
 #welcome-text:nth-child(3) 
 {
   
- 
   color: lime;
   transform: translate(-50px,10px);
   animation: fadeIn 5.2s;
@@ -68,6 +67,7 @@ html {
 
 .menu
 {
+  
   display:flex;
   flex-direction: row;
   width:100%;
@@ -76,7 +76,6 @@ html {
   top:0px;
   
   position:fixed;
-
   z-index: 3;
   justify-content: flex-end;
   
@@ -84,23 +83,33 @@ html {
 }
 .menu li
 {
+  
   align-items: center;
   list-style: none;
   list-style-type: none;
+ 
   
 }
 
 .menu li a
 {
-  list-style: none;
+  
+  text-decoration: none;
   padding-right: 10px;
   font-size: 130%;
   color: yellow;
   right:10px;
+  left:10px;
   margin:20px;
   
+  
 }
-
+.menu li a:hover
+{
+  background: -webkit-linear-gradient(#fbb801, #ff0202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 
@@ -206,7 +215,7 @@ html {
 .aboutMe{
   
   display:flex;
-  height:300;
+  height:450px;
   width:1200px;
   justify-content:center;
   align-content: center;
